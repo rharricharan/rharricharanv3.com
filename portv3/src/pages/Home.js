@@ -55,6 +55,9 @@ function Home() {
                             <a className="copyright-menu-link" href="https://www.dribbble.com/RyanHarricharan/" target="_blank">
                                 <h3 className="copyright-menu-link-text">Dribbble</h3>
                             </a>
+                            <a className="copyright-menu-link" href="https://www.dribbble.com/RyanHarricharan/" target="_blank">
+                                <h3 className="copyright-menu-link-text">Email</h3>
+                            </a>
                         </div>
                     </div>
                 </div>
