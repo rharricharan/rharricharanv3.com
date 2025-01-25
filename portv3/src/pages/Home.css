@@ -1,0 +1,302 @@
+@import url('@fontsource/inter/index.css');
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.home-wrap {
+    width: 100vw;
+    height: 100vh;
+    overflow: none;
+    overflow-x: none;
+    overflow-y: none;
+}
+
+.home-video {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.home-video-overlay {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    background-repeat: no-repeat;
+    z-index: 8;
+}
+
+.home-hero {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    top: 24px;
+}
+
+.home-header {
+    width: 100%;
+    position: fixed;
+}
+
+.home-header-padding {
+    padding: 6px 12px;
+    border-radius: 200px;
+    background-color: rgba(26, 26, 26, 0.5);
+    display: inline-block;
+    backdrop-filter: blur(20px);
+}
+
+.home-header-padding h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 140%;
+    font-size: 16px;
+    letter-spacing: -0.5px;
+}
+
+.home-content {
+    position: fixed;
+    top: 40%;
+    left: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.home-content h1, h2 {
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    line-height: 140%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 55%;
+}
+
+.home-content h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: -2px;
+    display: inline;
+}
+
+.home-content h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: -0.8px;
+}
+
+.home-footer {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 48px;
+    left: 48px;
+    right: 48px;
+}
+
+.home-footer-name {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    background-color: rgba(26, 26, 26, 0.5);
+    backdrop-filter: blur(20px);
+    padding: 12px 24px 12px 12px;
+    border-radius: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 40px;
+    height: 40px;
+}
+
+.home-footer-name-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 3px;
+}
+
+.home-footer-name-text h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: -0.5px;
+}
+
+.home-footer-name-text h4 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: -0.5px;
+}
+
+.home-footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.home-footer-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.menu-link-work {
+    padding: 8px 16px;
+    border-radius: 200px;
+    background-color: rgba(26, 26, 26, 0.5);
+    backdrop-filter: blur(20px);
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: fit-content;
+}
+
+.menu-link-about {
+    padding: 8px 16px;
+    border-radius: 200px;
+    background-color: rgba(26, 26, 26, 0.5);
+    backdrop-filter: blur(20px);
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: fit-content;
+}
+
+.menu-link-experience {
+    padding: 8px 16px;
+    border-radius: 200px;
+    background-color: rgba(26, 26, 26, 0.5);
+    backdrop-filter: blur(20px);
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: fit-content;
+}
+
+.menu-link-work h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: -0.5px;
+    text-align: right;
+}
+
+.menu-link-about h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: -0.5px;
+    text-align: right;
+}
+
+.menu-link-experience h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: -0.5px;
+    text-align: right;
+}
+
+.home-footer-copyright {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.home-footer-copyright h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: -0.5px;
+}
+
+.home-footer-copyright-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.copyright-menu-link h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: -0.5px;
+}
+
+.copyright-menu-link h3:hover {
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+
+.copyright-menu-link {
+    position: relative;
+    display: inline-block; /* Ensures the link hugs the content */
+    text-decoration: none; /* Removes default underline */
+    color: rgba(255, 255, 255, 0.5); /* Set text color */
+    overflow: hidden; /* Ensures animation doesn't overflow */
+}
+  
+.copyright-menu-link-text {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+  
+.copyright-menu-link::after {
+    content: ''; /* Creates the underline effect */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px; /* Thickness of the underline */
+    background: rgba(255, 255, 255, 0.5); /* Color of the underline */
+    transition: width 0.3s ease-in-out; /* Controls animation speed */
+}
+  
+.copyright-menu-link:hover::after {
+    width: 100%; /* Expands the underline fully */
+}
