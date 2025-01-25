@@ -22,7 +22,7 @@ function Home() {
                     </div>
                 </div>
                 <div className="home-content">
-                    <h1 className="home-content-title">An award winning multidisplinary designer and <span className="highlight">Awwwards</span> Jury Member crafting interfaces that are useful and feel natural.</h1>
+                    <h1 className="home-content-title">An award winning Multidisplinary Designer and <span className="highlight">Awwwards</span> Jury Member crafting interfaces that are useful and feel natural.</h1>
                     <h2 className="home-content-subtitle">Previously designed at Smartstop® and has worked for BMW, Verizon and Our Next Energy®.</h2>
                 </div>
                 <div className="home-footer">
