@@ -63,13 +63,46 @@ video {
     backdrop-filter: blur(20px);
 }
 
-.experience-header-padding h3 {
+.experience-tag {
+    padding: 8px 16px;
+    border-radius: 200px;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: inline-block;
+    backdrop-filter: blur(20px);
+}
+
+.experience-tag h3 {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.9);
     line-height: 140%;
     font-size: 16px;
     letter-spacing: -0.5px;
+    user-select: none;
+}
+
+.home-tag {
+    padding: 8px 16px;
+    border-radius: 200px;
+    background-color: rgba(255, 255, 255, 0.06);
+    display: inline-block;
+    backdrop-filter: blur(20px);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.home-tag h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.4);
+    line-height: 140%;
+    font-size: 16px;
+    letter-spacing: -0.5px;
+    user-select: none;
+}
+
+.home-tag:hover {
+    background-color: rgba(255, 255, 255, 0.04);
 }
 
 .experience-hero {
@@ -78,26 +111,4 @@ video {
     height: 100%;
     z-index: 100;
     top: 24px;
-}
-
-.experience-header {
-    width: 100%;
-    position: fixed;
-}
-
-.experience-header-padding {
-    padding: 8px 16px;
-    border-radius: 200px;
-    background-color: rgba(255, 255, 255, 0.1);
-    display: inline-block;
-    backdrop-filter: blur(20px);
-}
-
-.experience-header-padding h3 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.9);
-    line-height: 140%;
-    font-size: 16px;
-    letter-spacing: -0.5px;
 }

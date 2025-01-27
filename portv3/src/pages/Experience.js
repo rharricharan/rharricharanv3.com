@@ -25,7 +25,7 @@ function Experience() {
             </div>
             <div className="experience-hero">
                 <div className="experience-header">
-                    <a className="experience-header-padding" onClick={handleHome}>
+                    <a className="experience-header-padding home-tag" onClick={handleHome}>
                         <h3 className="experience-header-text">home</h3>
                     </a>
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -38,9 +38,14 @@ function Experience() {
                             </clipPath>
                         </defs>
                     </svg>
-                    <a className="experience-header-padding">
+                    <a className="experience-header-padding experience-tag">
                         <h3 className="experience-header-text">experience</h3>
                     </a>
+                </div>
+                <div className="experience-content">
+                    <div className='experience-content-center'>
+                        
+                    </div>
                 </div>
             </div>
         </div>
