@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import './Home.css';
 import HomeVideo from '../assets/homeTwo.mp4';
 import Pfp from '../assets/pfp.svg';
@@ -9,6 +10,20 @@ import '@fontsource/inter/700.css'; // Bold weight
 import '@fontsource/inter/900.css'; // Black weight
 
 function Home() {
+    const navigate = useNavigate();
+
+    const handleExperience = () => {
+        navigate('/experience');
+    }
+
+    const handleAbout = () => {
+        navigate('/about');
+    }
+
+    const handleWork = () => {
+        navigate('/work');
+    }
+
     return (
         <div className="home-wrap">
             <div className="home-video">
@@ -35,13 +50,13 @@ function Home() {
                             </div>
                         </div>
                         <div className="home-footer-menu">
-                            <a className="menu-link-work">
+                            <a className="menu-link-work" onClick={handleWork}>
                                 <h3 className="menu-link-text">Work</h3>
                             </a>
-                            <a className="menu-link-about">
+                            <a className="menu-link-about" onClick={handleAbout}>
                                 <h3 className="menu-link-text">About</h3>
                             </a>
-                            <a className="menu-link-experience">
+                            <a className="menu-link-experience" onClick={handleExperience}>
                                 <h3 className="menu-link-text">Experience</h3>
                             </a>
                         </div>
