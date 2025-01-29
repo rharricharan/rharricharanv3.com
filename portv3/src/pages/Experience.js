@@ -17,6 +17,14 @@ function Experience() {
         navigate('/');
     }
 
+    const handleAbout = () => {
+        navigate('/about');
+    }
+
+    const handleWork = () => {
+        navigate('/work');
+    }
+
     return (
         <div className='experience-wrap'>
             <div className="experience-video">
@@ -44,7 +52,113 @@ function Experience() {
                 </div>
                 <div className="experience-content">
                     <div className='experience-content-center'>
-                        
+                        <div className='experience-content-title'>
+                            <h3 className='experience-content-title-text'>experience</h3>
+                        </div>
+                        <div className='experience-content-container'>
+                            <div className='experience-content-item'>
+                                <div className='experience-content-item-content'>
+                                    <h3 className='primary-txt'>awwwards.</h3>
+                                </div>
+                                <div className='experience-content-item-content'>
+                                    <h3 className='secondary-txt'>jury member</h3>
+                                </div>
+                                <div className='experience-content-item-content'>
+                                    <h3 className='secondary-txt'>2024 - present</h3>
+                                </div>
+                            </div>
+                            <div className='experience-content-item'>
+                                <div className='experience-content-item-content'>
+                                    <h3 className='primary-txt'>arro™</h3>
+                                </div>
+                                <div className='experience-content-item-content'>
+                                    <h3 className='secondary-txt'>co-founder</h3>
+                                </div>
+                                <div className='experience-content-item-content'>
+                                    <h3 className='secondary-txt'>2024 - present</h3>
+                                </div>
+                            </div>
+                            <div className='experience-content-item'>
+                                <div className='experience-content-item-content'>
+                                    <h3 className='primary-txt'>smartstop</h3>
+                                </div>
+                                <div className='experience-content-item-content'>
+                                    <h3 className='secondary-txt'>product designer</h3>
+                                </div>
+                                <div className='experience-content-item-content'>
+                                    <h3 className='secondary-txt'>2023 - 2024</h3>
+                                </div>
+                            </div>
+                            <div className='experience-content-item'>
+                                <div className='experience-content-item-content'>
+                                    <h3 className='primary-txt'>lumina studio®</h3>
+                                </div>
+                                <div className='experience-content-item-content'>
+                                    <h3 className='secondary-txt'>chief executive officer</h3>
+                                </div>
+                                <div className='experience-content-item-content'>
+                                    <h3 className='secondary-txt'>2021 - 2024</h3>
+                                </div>
+                            </div>
+                            <div className='experience-content-item'>
+                                <div className='experience-content-item-content'>
+                                    <h3 className='primary-txt'>rh design</h3>
+                                </div>
+                                <div className='experience-content-item-content'>
+                                    <h3 className='secondary-txt'>freelance designer</h3>
+                                </div>
+                                <div className='experience-content-item-content'>
+                                    <h3 className='secondary-txt'>2017 - 2023</h3>
+                                </div>
+                            </div>
+                            <div className='experience-content-item'>
+                                <div className='experience-content-item-content'>
+                                    <h3 className='primary-txt'>our next energy</h3>
+                                </div>
+                                <div className='experience-content-item-content'>
+                                    <h3 className='secondary-txt'>senior ux designer</h3>
+                                </div>
+                                <div className='experience-content-item-content'>
+                                    <h3 className='secondary-txt'>2023 - 2023</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="home-footer">
+                    <div className="home-footer-content">
+                        <div className="home-footer-name">
+                            <img src={Pfp} />
+                            <div className="home-footer-name-text">
+                                <h3 className="home-footer-name-text-name">Ryan Harricharan</h3>
+                                <h4 className="home-footer-name-text-title">Product Designer</h4>
+                            </div>
+                        </div>
+                        <div className="home-footer-menu">
+                            <a className="menu-link-work" onClick={handleWork}>
+                                <h3 className="menu-link-text">Work</h3>
+                            </a>
+                            <a className="menu-link-about" onClick={handleAbout}>
+                                <h3 className="menu-link-text">About</h3>
+                            </a>
+                            <a className="menu-link-experience">
+                                <h3 className="menu-link-text">Experience</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div className="home-footer-copyright">
+                        <h3 className="home-footer-copyright-text">© 2024 Ryan Harricharan</h3>
+                        <div className="home-footer-copyright-menu">
+                            <a className="copyright-menu-link" href="https://www.linkedin.com/in/rharricharan/" target="_blank">
+                                <h3 className="copyright-menu-link-text">LinkedIn</h3>
+                            </a>
+                            <a className="copyright-menu-link" href="https://www.dribbble.com/RyanHarricharan/" target="_blank">
+                                <h3 className="copyright-menu-link-text">Dribbble</h3>
+                            </a>
+                            <a className="copyright-menu-link" href="https://www.dribbble.com/RyanHarricharan/" target="_blank">
+                                <h3 className="copyright-menu-link-text">Email</h3>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
