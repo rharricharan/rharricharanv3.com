@@ -70,7 +70,10 @@ function Home() {
                                     <h3 className="menu-link-text">About</h3>
                                 </a>
                                 <a className="menu-link-experience" onClick={handleExperience}>
-                                    <h3 className="menu-link-text">Experience</h3>
+                                    <div className="selected-menu-link">
+                                        <h3 className="menu-link-text">Experience</h3>
+                                        <h3 className="menu-link-text">Experience</h3>
+                                    </div>
                                 </a>
                             </div>
                         </div>

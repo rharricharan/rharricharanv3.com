@@ -323,3 +323,13 @@ img {
 .copyright-menu-link:hover::after {
     width: 100%; /* Expands the underline fully */
 }
+
+.selected-menu-link {
+    position: relative;
+    display: flex; /* Ensures the link hugs the content */
+    flex-direction: column;
+    text-decoration: none; /* Removes default underline */
+    color: rgba(255, 255, 255, 0.8); /* Set text color */
+    overflow: hidden; /* Ensures animation doesn't overflow */
+    gap: 6px;
+}
