@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import './Home.css';
 import HomeVideo from '../assets/homeTwo.mp4';
 import Pfp from '../assets/pfp.svg';
-import { animate, motion } from 'framer-motion';
+import { animate, delay, motion } from 'framer-motion';
 import '@fontsource/inter'; // Defaults to weight 400
 import '@fontsource/inter/400.css'; // Specific weight
 import '@fontsource/inter/500.css'; // Specific weight
@@ -31,12 +31,19 @@ function Home() {
         exit: { opacity: 0, x: -100, transition: { duration: 0.3 } }
     };
 
+    const transition = {
+        duration: 0.3,
+        delay: 0.3,
+        ease: [0, 0.71, 0.2, 1.01],
+    };
+
     return (
         <motion.div
             variants={pageVariants}
             initial="initial"
             animate="animate"
             exit="exit"
+            transition={transition}
         >
             <div className="home-wrap">
                 <div className="home-video">
